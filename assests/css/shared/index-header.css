@@ -1,0 +1,139 @@
+.ceylon-craft-header {
+  background-color: #0c1423;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.ceylon-craft-header-left-section {
+  width: 180px;
+}
+
+@media (max-width: 800px) {
+  .ceylon-craft-header-left-section {
+    width: unset;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  padding: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+}
+
+
+.ceylon-craft-logo {
+  width: 120px;
+  margin-top: 5px;
+}
+
+.ceylon-craft-mobile-logo {
+  display: none;
+}
+
+.ceylon-craft-middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-button {
+  background-color: #c8d990;
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.ceylon-craft-right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.login-link {
+  color: black;
+  background-color: #c8d990;
+  border: 1px solid #c8d990c4;
+  border-radius: 9px;
+  transition: 0.3s;
+}
+.login-link:hover {
+  background-color: #c8d990e0;
+  border: 1px solid #c8d990e0;
+}
+.login-link:active {
+  background-color: #c8d990;
+  border: 1px solid #c8d990c4;
+}
+
+.login-text {
+  display: block;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  order: -1;
+}
+
+.cart-icon {
+  width: 40px;
+}
+
+.quantity {
+  position: absolute;
+  top: -2px;
+  right: -7px;
+
+  font-size: 12px;
+  width: 20px;
+  height: 18px;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 3px;
+}

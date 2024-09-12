@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #f0f4eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  background-color: #e6eed9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.content-wrapper {
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+}
+
+.logo-container {
+  width: 40%;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-container {
+  width: 55%;
+  padding: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #3e5c3b;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.input-group input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.submit-btn,.btn {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #748e74;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px 0px gray;
+  background-color: #5f7b5f;
+}
+
+/* .login-now button,
+.go-back button{
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #748e74;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+
+
+.message {
+  text-align: center;
+  background: #f9eded;
+  padding: 15px 0px;
+  border: 1px solid #699053;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: red;
+}
