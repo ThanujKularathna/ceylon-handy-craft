@@ -50,7 +50,7 @@ include 'database/connect.php';
         <?php } ?>
       <a class="cart-link header-link" href="checkout.php">
         <img class="cart-icon" src="assests/images/icons/cart-icon.png">
-        <span class="quantity js-quantity">0</span>
+        <span class="quantity js-cart-quantity">0</span>
       </a>
     </div>
   </div>
@@ -112,6 +112,6 @@ include 'database/connect.php';
       ?>
     </div>
   </div>
+  <script type="module" src="scripts/index.js"></script> 
 </body>
-  <script  src="scripts/addToCart.js"></script> 
 </html>
